@@ -116,6 +116,11 @@ public extension Templates {
                             }
                             $0.sourceFrameInset = model.configuration.sourceFrameInset
                             $0.screenEdgePadding = model.configuration.screenEdgePadding
+                            $0.dismissal.mode = .none
+                            $0.blocksBackgroundTouches = true
+                            $0.onTapOutside = {
+                                model.present = false
+                            }
                         }
                     ) {
                         MenuView(
