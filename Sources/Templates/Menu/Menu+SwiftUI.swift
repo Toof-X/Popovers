@@ -54,7 +54,7 @@ public extension Templates {
                 label(fadeLabel)
                     .frameTag(model.id)
                     .contentShape(Rectangle())
-                    .simultaneousGesture(
+                    .gesture(
                         DragGesture(minimumDistance: 0, coordinateSpace: .global)
                             .onChanged { value in
 
